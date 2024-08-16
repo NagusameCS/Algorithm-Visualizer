@@ -13,16 +13,17 @@ header {
 }
 
 #visualization-container {
-    width: 80%;
-    height: 60vh;
+    width: 80vw;  /* Make sure it scales with the viewport width */
+    height: 60vh; /* Make sure it scales with the viewport height */
     border: 1px solid #ccc;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 #controls {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -31,7 +32,7 @@ button {
     margin-left: 10px;
 }
 
-select {
+select, input {
     padding: 10px;
     font-size: 16px;
 }

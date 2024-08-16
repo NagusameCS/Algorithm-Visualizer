@@ -11,9 +11,11 @@
         <h1>Algorithm Visualizer</h1>
     </header>
     <main>
-        <div id="visualization-container"></div>
         <div id="controls">
-            <select id="algorithm-select">
+            <label for="size-input">Array Size:</label>
+            <input type="number" id="size-input" min="5" max="100" value="10">
+            <label for="algorithm-select">Algorithm:</label>
+            <select id="algorithm-select" aria-label="Select sorting or searching algorithm">
                 <option value="bubbleSort">Bubble Sort</option>
                 <option value="quickSort">Quick Sort</option>
                 <option value="binarySearch">Binary Search</option>
@@ -21,6 +23,7 @@
             </select>
             <button onclick="startVisualization()">Start Visualization</button>
         </div>
+        <div id="visualization-container"></div>
     </main>
     <script src="scripts.js"></script>
 </body>
